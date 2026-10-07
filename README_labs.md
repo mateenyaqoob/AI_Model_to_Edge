@@ -1,8 +1,6 @@
 # Edge Computing Labs: Bridging AI/ML to the Edge
 
-Five labs supporting Lectures 1 and 2. Labs 1, 2, 3 and 5 were executed end to end during preparation
-and produced the outputs quoted in the slides. **Lab 4 was only syntax-checked** (PyTorch could not be
-installed in the authoring sandbox): run it once on Colab before class.
+These codes are for supporting Lectures 11 and 12. The 1, 2, 3 and 5 were executed end to end during preparation and produced the outputs quoted in the slides. 
 
 ## Setup
 ```
@@ -14,11 +12,11 @@ Python 3.10+. No GPU needed. Everything runs on a laptop CPU in under a couple o
 
 | Lab | File | Needs | Time | What it teaches |
 |---|---|---|---|---|
-| 1 | `lab1_budgets.py` | NumPy | 20 min | Params, MACs, weight/activation memory, device fit, roofline arithmetic |
-| 2 | `lab2_quantization.py` | NumPy | 25 min | Affine INT8 from scratch: outliers, per-channel, INT32 accumulate |
-| 3 | `lab3_pruning_and_benchmark.py` | NumPy, ONNX, ONNX Runtime | 30 min | Pruning vs speed; correct benchmarking; tail latency under contention |
-| 4 | `lab4_pytorch_to_edge.py` | PyTorch + ONNX Runtime | 45 min | Full lifecycle: train, prune, export, INT8, compare. **Untested here.** |
-| 5 | `lab5_distill_and_lifecycle.py` | scikit-learn | 20 min | Distillation with a control; bit-width cliff |
+| 1 | `1_budgets.py` | NumPy | 20 min | Params, MACs, weight/activation memory, device fit, roofline arithmetic |
+| 2 | `2_quantization.py` | NumPy | 25 min | Affine INT8 from scratch: outliers, per-channel, INT32 accumulate |
+| 3 | `3_pruning_and_benchmark.py` | NumPy, ONNX, ONNX Runtime | 30 min | Pruning vs speed; correct benchmarking; tail latency under contention |
+| 4 | `4_pytorch_to_edge.py` | PyTorch + ONNX Runtime | 45 min | Full lifecycle: train, prune, export, INT8, compare. **Untested here.** |
+| 5 | `5_distill_and_lifecycle.py` | scikit-learn | 20 min | Distillation with a control; bit-width cliff |
 
 ## Expected results (from the authoring run; yours will differ in the last digits)
 - **Lab 1:** separable convs cut MACs 8.2x and params 8.1x. Analytic check: ratio = 1/(1/C_out + 1/k^2).
