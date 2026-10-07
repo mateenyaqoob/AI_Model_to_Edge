@@ -1,4 +1,4 @@
-# Edge Computing Labs: Bridging AI/ML to the Edge
+# Edge Computing: Bridging AI/ML to the Edge
 
 These codes are for supporting Lectures 11 and 12. The 1, 2, 3 and 5 were executed end to end during preparation and produced the outputs quoted in the slides. 
 
